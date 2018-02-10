@@ -5,7 +5,7 @@
 ## install
 
 ```sh
-$ npm install -g m59/yaml-to-json
+$ npm install -g @m59/yaml-to-json
 ```
 
 ## example
