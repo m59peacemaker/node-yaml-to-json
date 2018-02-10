@@ -4,7 +4,7 @@
   "description": "pipe yaml to stdin, get json from stdout, or pass a src directory of yaml files (recursive) and a dest directory for json files.",
   "main": "index.js",
   "bin": {
-    "yaml-to-json": "yaml-to-json.js"
+    "yaml-to-json": "bin/yaml-to-json.js"
   },
   "keywords": [
     "yaml",
