@@ -1,0 +1,28 @@
+{
+  "name": "m59/yaml-to-json",
+  "version": "1.0.0",
+  "description": "pipe yaml to stdin, get json from stdout, or pass a src directory of yaml files (recursive) and a dest directory for json files.",
+  "main": "index.js",
+  "bin": {
+    "yaml-to-json": "yaml-to-json.js"
+  },
+  "keywords": [
+    "yaml",
+    "json",
+    "dir",
+    "directory",
+    "pipe",
+    "stdin",
+    "stdout",
+    "simple",
+    "recursive"
+  ],
+  "author": "Johnny Hauser <johnnyhauser@gmail.com>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "globby": "^7.1.1",
+    "js-yaml": "^3.10.0",
+    "replace-ext": "^1.0.0"
+  }
+}
