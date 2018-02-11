@@ -11,10 +11,10 @@ const [ src, dest ] = process.argv.slice(2)
 const yamlToJson = yamlString => JSON.stringify(yaml.safeLoad(yamlString), null, 2)
 
 if (process.stdin.isTTY) {
-  glob(path.join(src, '/**/*.{yml,yaml}'))
+  glob('**/*.{yml,yaml}', { cwd: src })
     .then(files => Promise.all(
       files.map(file => fs
-        .readFile(file, 'utf8')
+        .readFile(path.join(src, file), 'utf8')
         .then(contents => fs.outputFile(
           path.join(dest, replaceExt(file, '.json')),
           yamlToJson(contents)
